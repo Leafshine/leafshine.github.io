@@ -1,0 +1,374 @@
+:root {
+    --yellow: #FCCD51;
+    --green: #51FC95;
+}
+
+body {
+    background: #131313;
+    background-image: url("images/circle.jpg");
+    background-size: 2vw;
+    animation: moveBG 60s linear infinite;
+    background-attachment: fixed;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes moveBG {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 25% 100%;
+    }
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.cont {
+    padding-top: 36vh;
+    width: 40vw;
+    margin-left: 30vw;
+}
+
+h1 {
+    font-size: 3vw;
+    font-weight: 600;
+    margin: 0;
+    animation: fadeInRight 1s forwards;
+}
+
+.h1em {
+    color: var(--yellow);
+}
+
+.h1em2 {
+    color: white;
+    font-weight: 700;
+}
+
+p {
+    font-size: 1.3vw;
+    margin: 0;
+    margin-bottom: 1.2vw;
+    animation: fadeInLeft 1s forwards;
+}
+
+.btn {
+    font-size: 1.3vw;
+    text-decoration: none;
+    color: var(--yellow);
+    border: .1vw solid var(--yellow);
+    padding: .3vw 1.8vw;
+    border-radius: .3vw 1.1vw;
+    box-shadow: inset 0 0 0 var(--yellow), inset 0 0 0 var(--yellow);
+    transition: box-shadow .4s, color .4s;
+    display: inline-block;
+    animation: fadeInUp 1.3s forwards;
+}
+
+.btn:hover {
+    box-shadow: inset 6vw 0 0 var(--yellow), inset -6vw 0 0 var(--yellow);
+    color: #131313;
+}
+
+.navbar {
+    list-style: none;
+    padding: 0;
+    float: left;
+    width: 40vw;
+    margin-left: 30vw;
+    margin-top: 4vh;
+    box-sizing: border-box;
+    border: .1vw solid var(--yellow);
+    padding: .5vw 1vw;
+    border-radius: .3vw 1.1vw;
+    animation: fadeInDown 1s forwards;
+}
+
+.navbar li {
+    display: inline-block;
+    margin: 0 .43vw;
+}
+
+.navbar li a {
+    font-size: 1.3vw;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.navbar li a:hover, .navbar li a.active {
+    color: var(--yellow);
+}
+
+table.product {
+    width: 100% !important;
+    border: none;
+    display: inline-block;
+    table-layout: fixed;
+    border-bottom: .2vw solid var(--yellow);
+    margin-top: -.15vw;
+}
+
+table.prodtop {
+    border-top: .2vw solid var(--yellow);
+}
+
+table.revproduct td {
+    text-align: right;
+}
+
+td {
+    width: 20vw;
+}
+
+.texttd {
+    padding: 1vw;
+    box-sizing: border-box;
+}
+
+.revproduct .texttd {
+    border-right: none;
+}
+
+td img {
+    width: 100%;
+}
+
+td h2 {
+    font-size: 1.8vw;
+    margin-top: -.4vw;
+    margin-bottom: 0;
+    animation: fadeInDown 1s forwards;
+}
+
+td p {
+    margin-bottom: 0;
+}
+
+a.link {
+    font-size: 1.3vw;
+    color: var(--yellow);
+}
+
+h1, h2, .navbar li a {
+    text-transform: uppercase;
+}
+
+.preload * {
+    transition: 0s !important;
+}
+
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.embed-container iframe, .embed-container object, .embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.logo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 1vw .8vw;
+}
+
+.logo img {
+    width: 5vw;
+    float: left;
+    animation: fadeInRight 1s forwards;
+}
+
+.logo h1 {
+    font-size: 1.5vw;
+    margin-top: 1.5vw;
+    margin-left: .4vw;
+    float: left;
+    animation: fadeInDown 1s forwards;
+}
+
+.logo a {
+    opacity: .8;
+    transition: .5s;
+}
+
+.logo a:hover {
+    opacity: 1;
+}
+
+.faq {
+    height: 1.3vw;
+    overflow: hidden;
+    padding: .5vw .8vw;
+    border: .1vw solid var(--yellow);
+    border-radius: .3vw 1.1vw;
+    cursor: pointer;
+    margin-bottom: 1vw;
+}
+
+.faq2 {
+    height: 2.9vw;
+}
+
+.faq p {
+    margin-bottom: 0vw;
+}
+
+.faq:hover, .faq:active {
+    height: 100%;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(2vh);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-2vh);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(2vw);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(-2vw);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@media only screen and (orientation: portrait) {
+
+    .cont {
+        width: 70vw;
+        margin-left: 15vw;
+    }
+
+    h1 {
+        font-size: 4.5vh;
+    }
+
+    p {
+        font-size: 2.5vh;
+    }
+
+    .btn {
+        font-size: 2.5vh;
+        border: .3vh solid var(--yellow);
+        padding: .8vh 2vh;
+        border-radius: .6vh 1.6vh;
+    }
+
+    .btn:hover {
+        box-shadow: inset 9.5vh 0 0 var(--yellow), inset -9.5vh 0 0 var(--yellow);
+    }
+
+    .logo img {
+        width: 8vh;
+    }
+
+    td {
+        width: 70vw;
+        display:block;
+    }
+
+    .texttd {
+        padding-bottom: 2vh;
+        padding-top: 2vh;
+    }
+
+    td h2 {
+        font-size: 3vh;
+    }
+
+    table.product {
+        border-bottom: .4vh solid var(--yellow);
+    }
+
+    table.prodtop {
+        border-top: .4vh solid var(--yellow);
+    }
+
+    body {
+        background-size: 4vh;
+    }
+
+    .logo h1 {
+        display: none;
+    }
+
+    .navbar {
+        border: .3vh solid var(--yellow);
+        border-radius: 1.6vh .6vh;
+        width: 70vw;
+        margin-left: 15vw;
+        padding: 1vh;
+    }
+
+    .navbar li {
+        display: block;
+        margin: .3vh 1vh;
+    }
+
+    .navbar li a {
+        font-size: 2.5vh;
+    }
+
+    .faq {
+        height: 2.7vh;
+        border: .3vh solid var(--yellow);
+        padding: .8vh 2vh;
+        border-radius: .6vh 1.6vh;
+        margin-bottom: .7vh;
+    }
+
+    .faq2 {
+        height: 11.8vh;
+    }
+
+}
