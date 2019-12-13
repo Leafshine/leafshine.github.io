@@ -8,7 +8,6 @@ body {
     background-image: url("images/circle.jpg");
     background-size: 2vw;
     animation: moveBG 60s linear infinite;
-    background-attachment: fixed;
     animation: fadeIn 1s forwards;
 }
 
