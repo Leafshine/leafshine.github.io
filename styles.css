@@ -7,8 +7,7 @@ body {
     background: #131313;
     background-image: url("images/circle.jpg");
     background-size: 2vw;
-    animation: moveBG 60s linear infinite;
-    animation: fadeIn 1s forwards;
+    animation: moveBG 60s linear infinite, fadeIn 1s forwards;
 }
 
 @keyframes moveBG {
@@ -89,7 +88,7 @@ p {
 
 .navbar li {
     display: inline-block;
-    margin: 0 .43vw;
+    margin: 0 .42vw;
 }
 
 .navbar li a {
