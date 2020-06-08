@@ -121,7 +121,7 @@ table.prodtop {
 }
 
 table.revproduct td {
-    text-align: right;
+    text-align: center;
 }
 
 td {
@@ -131,6 +131,7 @@ td {
 .texttd {
     padding: 1vw;
     box-sizing: border-box;
+    text-align:center;
 }
 
 .revproduct .texttd {
