@@ -56,20 +56,26 @@ p {
 
 .btn {
     font-size: 1.3vw;
+    background-color:rgba(0,0,0,0);
     text-decoration: none;
     color: var(--yellow);
     border: .1vw solid var(--yellow);
     padding: .3vw 1.8vw;
     border-radius: .3vw 1.1vw;
-    box-shadow: inset 0 0 0 var(--yellow), inset 0 0 0 var(--yellow);
-    transition: box-shadow .4s, color .4s;
+    /* box-shadow: inset 0 0 0 var(--yellow), inset 0 0 0 var(--yellow); */
+    box-shadow:none;
+    /* transition: box-shadow 1s, color .8s ease-in; */
+    transition: background-color .8s, color .8s, border .8s, box-shadow .8s ease;
     display: inline-block;
     animation: fadeInUp 1.3s forwards;
 }
 
 .btn:hover {
-    box-shadow: inset 6vw 0 0 var(--yellow), inset -6vw 0 0 var(--yellow);
+    /* box-shadow: inset 6vw 0 0 var(--yellow), inset -6vw 0 0 var(--yellow); */
     color: #131313;
+    background-color: var(--yellow);
+    border:.3vw solid white;
+    box-shadow: 0px 0px 20px rgb(255, 255, 255);
 }
 
 .navbar {
@@ -206,13 +212,14 @@ h1, h2, .navbar li a {
 }
 
 .faq {
-    height: 1.3vw;
+    max-height: 2.3vh;
     overflow: hidden;
     padding: .5vw .8vw;
     border: .1vw solid var(--yellow);
     border-radius: .3vw 1.1vw;
     cursor: pointer;
     margin-bottom: 1vw;
+    transition: max-height 5s ease;
 }
 
 .faq2 {
@@ -224,7 +231,7 @@ h1, h2, .navbar li a {
 }
 
 .faq:hover, .faq:active {
-    height: 100%;
+    max-height: 100vh;
 }
 
 @keyframes fadeIn {
@@ -369,4 +376,10 @@ h1, h2, .navbar li a {
         height: 11.8vh;
     }
 
+}
+
+.index-cont{
+    text-align:center;
+    margin:auto;
+    max-width:500px;
 }
