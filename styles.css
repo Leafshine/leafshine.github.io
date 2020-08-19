@@ -55,6 +55,15 @@ p {
     animation: fadeInLeft 1s forwards;
 }
 
+p2 {
+    color: 	#800000;
+    font-size: 2vw;
+    margin: 0;
+    margin-bottom: 1.2vw;
+    animation: fadeInRight 1s forwards;
+}
+
+
 .btn {
     font-size: 1.3vw;
     background-color:rgba(0,0,0,0);
