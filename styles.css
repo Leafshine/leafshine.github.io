@@ -56,7 +56,8 @@ p {
 }
 
 p2 {
-    color: 	#800000;
+    font-family: 'Montserrat', sans-serif;
+    color: #FF6347;
     font-size: 2vw;
     margin: 0;
     margin-bottom: 1.2vw;
